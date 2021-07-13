@@ -1,0 +1,17 @@
+<label for="">number 1</label>
+<input type="number" [(ngModel)]="number1">
+<br>
+<label for="">toan tu</label>
+<select #element (change)="total(element.value)">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="*">*</option>
+</select>
+<br>
+<label for="">number 2</label>
+<input type="number" [(ngModel)]="number2">
+
+<p>{{ result }}</p>
+
+
